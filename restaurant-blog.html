@@ -69,7 +69,18 @@
     <script src="vendor/modernizr/modernizr.min.js"></script>
   </head>
 
-  <body>
+  <body
+    class="loading-overlay-showing"
+    data-loading-overlay
+    data-plugin-options="{'hideDelay': 500, 'effect': 'cubeProgress'}"
+  >
+    <div class="loading-overlay">
+      <div class="bounce-loader">
+        <span class="cssload-cube-progress">
+          <span class="cssload-cube-progress-inner"></span>
+        </span>
+      </div>
+    </div>
     <div class="body">
       <header
         id="header"
