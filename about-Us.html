@@ -89,7 +89,7 @@
       >
         <div class="header-body border-top-0">
           <div
-            class="header-top header-top-default header-top-borders border-bottom-0 bg-dark"
+            class="header-top header-top-default header-top-borders border-bottom-0 bg-secondary"
           >
             <div class="container">
               <div class="header-row">
@@ -99,10 +99,10 @@
                       class="d-flex align-items-center w-100 w-sm-50pct w-md-100pct"
                     >
                       <span class="text-color-light text-2 d-sm-none d-md-block"
-                        >The best place to eat in downtown Porto!</span
-                      >
+                        >Reach us at:
+                      </span>
                       <a
-                        class="text-color-light text-decoration-none font-weight-bold text-2-5 opacity-hover-9 ms-2"
+                        class="text-color-light text-decoration-none font-weight-semibold text-2-5 opacity-hover-9 ms-2"
                         href="tel:1234567890"
                         >(800) 123-4567</a
                       >
@@ -110,12 +110,40 @@
                     <div
                       class="w-50pct w-md-50pct w-lg-100pct d-none d-sm-block"
                     >
-                      <span
-                        class="d-flex align-items-center justify-content-end text-color-light font-weight-semibold text-2-5"
+                      <ul
+                        class="social-icons-icon-light header-social-icons social-icons social-icons-clean-with-border d-flex align-items-center justify-content-end text-color-light"
                       >
-                        <i class="icon icon-clock font-weight-bold me-2"></i>
-                        Mon - Sat 9:00am - 6:00pm
-                      </span>
+                        <li class="social-icons-instagram">
+                          <a
+                            href="https://www.instagram.com"
+                            class="text-decoration-none text-color-light text-color-hover-secondary text-5 mx-2"
+                            target="_blank"
+                          >
+                            <i class="fab fa-instagram"> </i>
+                          </a>
+                        </li>
+
+                        <li class="social-icons-facebook">
+                          <a
+                            href="https://www.facebook.com"
+                            class="text-decoration-none text-color-light text-color-hover-secondary text-5 mx-2"
+                            target="_blank"
+                          >
+                            <i class="fab fa-facebook"></i>
+                          </a>
+                        </li>
+
+                        <li class="social-icons-youtube">
+                          <a
+                            href="https://www.youtube.com"
+                            class="text-decoration-none text-color-light text-color-hover-secondary text-5 mx-2"
+                            target="_blank"
+                            data-cursor-effect-hover="fit"
+                          >
+                            <i class="fab fa-youtube fa-sm"></i>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -147,20 +175,24 @@
                       <nav class="collapse">
                         <ul class="nav nav-pills" id="mainNav">
                           <li>
-                            <a class="nav-link" href="index.html"> Home </a>
+                            <a class="nav-link active" href="index.html">
+                              Home
+                            </a>
+                          </li>
+                          <li>
+                            <a class="nav-link" href="about-Us.html"> About </a>
                           </li>
                           <li>
                             <a class="nav-link" href="restaurant-menu.html">
                               Menu
                             </a>
                           </li>
+
                           <li>
-                            <a class="nav-link active" href="about-Us.html">
-                              About
-                            </a>
-                          </li>
-                          <li>
-                            <a class="nav-link" href="restaurant-blog.html">
+                            <a
+                              class="nav-link"
+                              href="demo-restaurant-blog.html"
+                            >
                               Blog
                             </a>
                           </li>
@@ -169,11 +201,11 @@
                               Contact
                             </a>
                           </li>
-                          <li>
+                          <!-- <li>
                             <a class="nav-link" href="elements.html">
                               Elements
                             </a>
-                          </li>
+                          </li> -->
                           <li class="d-lg-none">
                             <a class="nav-link" href="#"> Book a Table </a>
                           </li>
@@ -186,11 +218,6 @@
               <div
                 class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row"
               >
-                <a
-                  href="#"
-                  class="btn btn-dark custom-btn-style-1 font-weight-semibold text-3 ws-nowrap ms-4 d-none d-lg-block"
-                  ><span>Book a Table</span></a
-                >
                 <div class="header-nav-features header-nav-features-no-border">
                   <div
                     class="header-nav-feature header-nav-features-search d-inline-flex"
@@ -205,7 +232,8 @@
                       ></i>
                     </a>
                     <div
-                      class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed border-radius-0"
+                      style="border: 1.5px solid #9c0635"
+                      class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed border-radius-0 border-2"
                       id="headerTopSearchDropdown"
                     >
                       <form
@@ -224,7 +252,7 @@
                           />
                           <button class="btn" type="submit">
                             <i
-                              class="icons icon-magnifier header-nav-top-icon text-color-dark text-color-hover-primary top-2"
+                              class="icons icon-magnifier header-nav-top-icon text-color-primary text-color-hover-primary top-2"
                             ></i>
                           </button>
                         </div>
@@ -232,27 +260,61 @@
                     </div>
                   </div>
                 </div>
-                <a
-                  href="https://www.instagram.com"
-                  class="text-decoration-none text-color-dark text-color-hover-primary text-5 mx-4"
-                  target="_blank"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a
-                  href="https://www.tripadvisor.com/"
-                  class="text-decoration-none"
-                  target="_blank"
-                >
-                  <img
-                    width="32"
-                    height="32"
-                    src="img/demos/restaurant/icons/tripadvisor.svg"
-                    alt="Tripadvisor Icon"
-                    data-icon
-                    data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-dark svg-fill-color-hover-primary', 'fadeIn': false}"
-                  />
-                </a>
+                <div class="header-nav-features ps-0 ms-1 mx-lg-5 mx-2">
+                  <div
+                    class="header-nav-feature header-nav-features-cart header-nav-features-cart-big d-inline-flex top-2 ms-2"
+                  >
+                    <a href="#" class="header-nav-features-toggle">
+                      <img
+                        src="img/icons/shoppingCartIcon.svg"
+                        height="30"
+                        alt=""
+                        class="header-nav-top-icon-img"
+                      />
+                      <span class="cart-info">
+                        <span class="cart-qty">1</span>
+                      </span>
+                    </a>
+                    <div
+                      class="header-nav-features-dropdown"
+                      id="headerTopCartDropdown"
+                    >
+                      <ol class="mini-products-list">
+                        <li class="item">
+                          <a href="#" title="Camera X1000" class="product-image"
+                            ><img
+                              src="img/products/product-1.jpg"
+                              alt="Camera X1000"
+                          /></a>
+                          <div class="product-details">
+                            <p class="product-name">
+                              <a href="#">Camera X1000 </a>
+                            </p>
+                            <p class="qty-price">
+                              1X <span class="price">$890</span>
+                            </p>
+                            <a
+                              href="#"
+                              title="Remove This Item"
+                              class="btn-remove"
+                              ><i class="fas fa-times"></i
+                            ></a>
+                          </div>
+                        </li>
+                      </ol>
+                      <div class="totals">
+                        <span class="label">Total:</span>
+                        <span class="price-total"
+                          ><span class="price">$890</span></span
+                        >
+                      </div>
+                      <div class="actions">
+                        <a class="btn btn-dark" href="cart.html">View Cart</a>
+                        <a class="btn btn-primary" href="#">Checkout</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <button
                   class="btn header-btn-collapse-nav"
                   data-bs-toggle="collapse"

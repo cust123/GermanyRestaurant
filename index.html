@@ -218,11 +218,6 @@
               <div
                 class="header-column header-column-search justify-content-end align-items-center d-flex w-auto flex-row"
               >
-                <a
-                  href="#"
-                  class="btn btn-dark custom-btn-style-1 font-weight-semibold text-3 ws-nowrap ms-4 d-none d-lg-block"
-                  ><span>Book a Table</span></a
-                >
                 <div class="header-nav-features header-nav-features-no-border">
                   <div
                     class="header-nav-feature header-nav-features-search d-inline-flex"
@@ -237,7 +232,8 @@
                       ></i>
                     </a>
                     <div
-                      class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed border-radius-0"
+                      style="border: 1.5px solid #9c0635"
+                      class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed border-radius-0 border-2"
                       id="headerTopSearchDropdown"
                     >
                       <form
@@ -256,7 +252,7 @@
                           />
                           <button class="btn" type="submit">
                             <i
-                              class="icons icon-magnifier header-nav-top-icon text-color-dark text-color-hover-primary top-2"
+                              class="icons icon-magnifier header-nav-top-icon text-color-primary text-color-hover-primary top-2"
                             ></i>
                           </button>
                         </div>
@@ -264,7 +260,61 @@
                     </div>
                   </div>
                 </div>
-
+                <div class="header-nav-features ps-0 ms-1 mx-lg-5 mx-2">
+                  <div
+                    class="header-nav-feature header-nav-features-cart header-nav-features-cart-big d-inline-flex top-2 ms-2"
+                  >
+                    <a href="#" class="header-nav-features-toggle">
+                      <img
+                        src="img/icons/shoppingCartIcon.svg"
+                        height="30"
+                        alt=""
+                        class="header-nav-top-icon-img"
+                      />
+                      <span class="cart-info">
+                        <span class="cart-qty">1</span>
+                      </span>
+                    </a>
+                    <div
+                      class="header-nav-features-dropdown"
+                      id="headerTopCartDropdown"
+                    >
+                      <ol class="mini-products-list">
+                        <li class="item">
+                          <a href="#" title="Camera X1000" class="product-image"
+                            ><img
+                              src="img/products/product-1.jpg"
+                              alt="Camera X1000"
+                          /></a>
+                          <div class="product-details">
+                            <p class="product-name">
+                              <a href="#">Camera X1000 </a>
+                            </p>
+                            <p class="qty-price">
+                              1X <span class="price">$890</span>
+                            </p>
+                            <a
+                              href="#"
+                              title="Remove This Item"
+                              class="btn-remove"
+                              ><i class="fas fa-times"></i
+                            ></a>
+                          </div>
+                        </li>
+                      </ol>
+                      <div class="totals">
+                        <span class="label">Total:</span>
+                        <span class="price-total"
+                          ><span class="price">$890</span></span
+                        >
+                      </div>
+                      <div class="actions">
+                        <a class="btn btn-dark" href="cart.html">View Cart</a>
+                        <a class="btn btn-primary" href="#">Checkout</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <button
                   class="btn header-btn-collapse-nav"
                   data-bs-toggle="collapse"
@@ -323,13 +373,13 @@
                   data-plugin-options="{'startDelay': 1100, 'minWindowWidth': 0}"
                   style="height: 42px"
                 >
-                  The best place to eat nad order in Duisburg!
+                  The Best Place to Eat and Order in Duisburg!
                 </p>
                 <a
                   href="restaurant-menu.html"
-                  class="btn btn-light btn-outline text-2-5 text-color-light border-color-light-2 font-weight-medium positive-ls-2 text-color-hover-dark px-5 btn-py-3 appear-animation"
+                  class="btn btn-secondary btn-outline text-2-5 text-color-light border-color-light-1 font-weight-medium positive-ls-2 text-color-hover-light px-5 btn-py-3 appear-animation"
                   data-appear-animation="fadeInUpShorterPlus"
-                  data-appear-animation-delay="2200"
+                  data-appear-animation-delay="1200"
                   >VIEW MENU</a
                 >
               </div>
